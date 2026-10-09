@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips & Tricks - Metroid Prime 4 Complete Guide</title>
+    <meta name="description" content="Metroid Prime 4 tips and tricks. Advanced strategies, hidden secrets, sequence breaking, and speedrun tips.">
+    <meta name="keywords" content="Metroid Prime 4 tips, MP4 tricks, hidden secrets, sequence break, speedrun guide">
+    <link rel="canonical" href="https://metroid-prime-4.wiki/tips.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyan: { 300: '#67E8F9', 400: '#22D3EE', 500: '#06B6D4', 600: '#0891B2' },
+                        space: { 900: '#0a0a0f', 800: '#12121a', 700: '#1a1a25', 600: '#252535' }
+                    },
+                    fontFamily: { 'orbitron': ['Orbitron', 'sans-serif'], 'inter': ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: radial-gradient(ellipse at top, #0c1a24 0%, #0a0a0f 50%, #050508 100%); min-height: 100vh; font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(18, 18, 26, 0.7); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-4px); border-color: rgba(6, 182, 212, 0.4); }
+        .tip-card { background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(18, 18, 26, 0.9) 100%); border: 1px solid rgba(6, 182, 212, 0.15); }
+    </style>
+</head>
+<body class="text-gray-100 antialiased">
+    <header class="glass sticky top-0 z-50 border-b border-cyan-500/20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <a href="/" class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/20">
+                        <span class="font-orbitron font-bold text-black text-lg">MP</span>
+                    </div>
+                    <div>
+                        <span class="font-orbitron font-bold text-xl text-white tracking-wider">METROID PRIME 4</span>
+                        <span class="block text-xs text-cyan-400/70">Complete Guide</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <a href="/" class="px-5 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Home</a>
+                    <a href="walkthrough.html" class="px-5 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Walkthrough</a>
+                    <a href="bosses.html" class="px-5 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Bosses</a>
+                    <a href="powerups.html" class="px-5 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Power-ups</a>
+                    <a href="beams.html" class="px-5 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all">Beams</a>
+                    <a href="tips.html" class="px-5 py-2 text-cyan-400 bg-cyan-500/10 rounded-lg border border-cyan-500/30 font-medium">Tips</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="text-center mb-12">
+            <h1 class="font-orbitron text-4xl md:text-5xl font-bold text-white mb-4 tracking-wider">TIPS & <span class="text-cyan-400">TRICKS</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">Advanced strategies and hidden secrets.</p>
+        </div>
+
+        <!-- Beginner Tips -->
+        <section class="mb-12">
+            <h2 class="font-orbitron text-2xl font-bold text-white mb-6 tracking-wider flex items-center gap-3">
+                <span class="w-8 h-8 bg-green-500/20 rounded-lg flex items-center justify-center text-green-400">B</span>
+                BEGINNER TIPS
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="tip-card card-hover rounded-xl p-5">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <span class="text-green-400 font-bold">1</span>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold mb-2">Scan Everything</h3>
+                            <p class="text-gray-400 text-sm">The Scan Visor reveals lore, weak points, and hidden paths. Always scan new enemies and environments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip-card card-hover rounded-xl p-5">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <span class="text-green-400 font-bold">2</span>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold mb-2">Explore Backtrack Areas</h3>
+                            <p class="text-gray-400 text-sm">New abilities open old areas. After getting Spider Ball, return to Chapter 1 zones for missed items.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip-card card-hover rounded-xl p-5">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <span class="text-green-400 font-bold">3</span>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold mb-2">Energy Management</h3>
+                            <p class="text-gray-400 text-sm">Never go into boss fights below 5 Energy Tanks. Health pickups are rare in boss arenas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip-card card-hover rounded-xl p-5">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <span class="text-green-400 font-bold">4</span>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold mb-2">Use Morph Ball Often</h3>
+                            <p class="text-gray-400 text-sm">Many secrets are hidden in small passages. If a tunnel looks too small, use Morph Ball anyway.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Tips -->
+        <section class="mb-12">
+            <h2 class="font-orbitron text-2xl font-bold text-white mb-6 tracking-wider flex items-center gap-3">
+                <span class="w-8 h-8 bg-yellow-500/20 rounded-lg flex items-center justify-center text-yellow-400">A</span>
+                ADVANCED STRATEGIES
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="tip-card rounded-2xl p-6">
+                    <h3 class="text-cyan-400 font-semibold mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        Beam Switching
+                    </h3>
+                    <p class="text-gray-400 text-sm">Switch beams based on enemy type. Dark enemies take extra from Light Beam. Armored enemies weak to charged Plasma.</p>
+                </div>
+                <div class="tip-card rounded-2xl p-6">
+                    <h3 class="text-cyan-400 font-semibold mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        Boss Weakness Exploit
+                    </h3>
+                    <p class="text-gray-400 text-sm">Every boss has a scan-revealed weakness. Watch for glowing weak points and switch to the matching beam element.</p>
+                </div>
+                <div class="tip-card rounded-2xl p-6">
+                    <h3 class="text-cyan-400 font-semibold mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        Missile Management
+                    </h3>
+                    <p class="text-gray-400 text-sm">Save missiles for boss phases and heavy enemies. Regular combat is more ammo-efficient with Power Beam.</p>
+                </div>
+                <div class="tip-card rounded-2xl p-6">
+                    <h3 class="text-cyan-400 font-semibold mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        Backtrack Rewards
+                    </h3>
+                    <p class="text-gray-400 text-sm">End game requires 100% items. Don't skip any zones - many Missile and Energy expansions are only accessible with late-game abilities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hidden Secrets -->
+        <section>
+            <h2 class="font-orbitron text-2xl font-bold text-white mb-6 tracking-wider flex items-center gap-3">
+                <span class="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center text-purple-400">?</span>
+                HIDDEN SECRETS
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="tip-card card-hover rounded-xl p-5">
+                    <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center mb-3">
+                        <span class="text-purple-400 text-xl">🔍</span>
+                    </div>
+                    <h3 class="text-white font-semibold mb-2">Secret Docks</h3>
+                    <p class="text-gray-400 text-sm">In Sky Temple, bomb the wall behind the main altar. Leads to area with 3 Energy Tanks and lore about Luminoth civilization.</p>
+                </div>
+                <div class="tip-card card-hover rounded-xl p-5">
+                    <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center mb-3">
+                        <span class="text-purple-400 text-xl">🎭</span>
+                    </div>
+                    <h3 class="text-white font-semibold mb-2">Phazon Suit Secret</h3>
+                    <p class="text-gray-400 text-sm">The Phazon Suit isn't just for protection. In Emperor's Throne, it reveals invisible platforms leading to secret cache.</p>
+                </div>
+                <div class="tip-card card-hover rounded-xl p-5">
+                    <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center mb-3">
+                        <span class="text-purple-400 text-xl">🏆</span>
+                    </div>
+                    <h3 class="text-white font-semibold mb-2">Completionist Reward</h3>
+                    <p class="text-gray-400 text-sm">100% completion unlocks Concept Art gallery and "True Hero" ending with extended cutscene showing Samus's future.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-space-900 border-t border-cyan-500/20 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Metroid Prime 4 Guide. All rights reserved. Not affiliated with Nintendo.</p>
+        </div>
+    </footer>
+</body>
+</html>
